@@ -1,0 +1,78 @@
+[v] Set up React app
+  + npx create-react-app ten-project
+[v] Set up Firebase
+  + npm install -g firebase-tools
+[v] Set up React Router
+  + npm install react-route-dom
+  + import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+  } from "react-router-dom";
+  44:23
+[v] Build Nav Bar
+  48:27
+  +cai es7 React/Redux
+  https://material-ui.com/
+[v] build Banner
+  1:48:00
+[v] build product component
+  2:04:56
+[v] react context api
+  2:42:50
+  like creating global variables can be passed around in a react app 
+  tạo StateProvide.js -> k cần hiểu code
+  wrap app bằng StateProvide ở file index.js
+  tạo file reducer.js có biến basket và 2 switch case
+  về file header.js thêm const [{ basket }] = useStateValue(); và {basket.length}
+  số phần tử đc cập nhập 3:15:43
+
+  ở file product.js 
+
+[v] setup add to basket 
+  dùng console.log để debug
+  reducer.js
+
+[v] build checkout page && build subtotal component
+  vào app.js dùng component checkout và header ở route checkout + tạo file checkout.js
+  import componet từ file 
+  thêm biến global trong reducer.js và biến basket dispatch ...
+  đoạn clone basket -> tái sử dụng
+  tạo file subtotal.js rồi import component vô checkout
+
+[v] build login page
+firebase có develop -> authentication
+21:04 p2
+onchange  login.js
+vô app.js, useEffect
+
+[v] deploy the app on Firebase
+vào firebase chỗ setting -> config ...
+terminal -> npm i firebase 
+firebase login
+firebase init -> hosting -> use an existing -> wwhat do you want .. go~ build 
+
+npm run build
+firebase deploy
+
+
+
+-----------------------------------
+part 1: https://youtu.be/1_IYL9ZMR_Y 
+part 2: https://youtu.be/iRwE2YTZsjQ
+github: https://github.com/CleverProgrammers/react-challenge-amazon-clone
+
+------------------------
+flex:1 -> full màn luôn
+<link to .. -> k refresh lại trang
+
+import file js vào app.js
+home__row css chia component hay 2:34:36 -> flexbox
+2:42:00 keep moving <3
+
+https://aggie.io/ -> draw
+
+https://stackoverflow.com/questions/31048953/what-do-these-three-dots-in-react-do
+https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
+https://stackoverflow.com/questions/56199111/visual-studio-code-cmd-error-cannot-be-loaded-because-running-scripts-is-disabl
